@@ -23,7 +23,7 @@ Using open source contributions.
 
 
 ### My Main Domain <a href="http://AHRADWANI.com">AHRADWANI.com</a> 
-<small style="display: block; margin-top: -15px;">Python Projects, Photographies, Sketches</small>
+<small style="display: block; margin-top: 0px;">Python Projects, Photographies, Sketches</small>
 
 
 ### Learning hub for my kids <a href="AHRADWANI.fun">AHRADWANI.fun</a> 
