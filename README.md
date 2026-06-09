@@ -22,12 +22,12 @@ Using open source contributions.
 
 </br></br>
 <p>
-<big><strong>My Main Domain <a href="http://AHRADWANI.com">AHRADWANI.com</a> </strong></big></br>
+<big><strong>My Main Domain <a href="https://AHRADWANI.com" target="_blanck">AHRADWANI.com</a> </strong></big></br>
 <small style="display: block; margin-top: 0px;">Python Projects, Photographies, Sketches</small>
 </p>
 </br>
 <p>
-<big><strong>Learning hub for my kids <a href="AHRADWANI.fun">AHRADWANI.fun</a> </strong></big></br>
+<big><strong>Learning hub for my kids <a href="https://AHRADWANI.fun" target="_blanck">AHRADWANI.fun</a> </strong></big></br>
 <small style="display: block; margin-top: -15px;">Kids Learning Hub/Apps</small>
 </p>
 
