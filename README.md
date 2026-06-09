@@ -3,9 +3,9 @@
 I'm a Software Developer with a passion for building accessible apps.
 
 ### In IT
-> I'm Solving math problems with Python.\n
-> Python and SQL. \n
-> AI to create HTML sites.\n 
+> I'm Solving math problems with Python.</br>
+> Python and SQL. </br>
+> AI to create HTML sites.</br> 
 
 
 Share what I know, stay curious, and create space for myself and others to  **learn & grow**.
@@ -19,7 +19,7 @@ Using open source contributions.
 > Reading books and </br>
 > Doing some hand-crafts. </br>
 
-### My Main Domain AHRADWANI.com
+### My Main Domain <a href="http://AHRADWANI.com>AHRADWANI.com</a>
 ### Learning hub for my kids AHRADWANI.fun
 
 
