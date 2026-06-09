@@ -1,5 +1,29 @@
 ## Hi there 👋
 
+I'm a Software Developer with a passion for building accessible apps.
+
+### In IT
+> I'm Solving math problems with Python.
+> Python and SQL. 
+> AI to create HTML sites. 
+
+
+Share what I know, stay curious, and create space for myself and others to  **learn & grow**.
+
+I enjoy **learing** technical concepts and share them.
+Using open source contributions.
+
+### Outside of tech,
+> I sketch,
+> Photographing.
+> Reading books and
+> Doing some hand-crafts.
+
+### My Main Domain AHRADWANI.com
+### Learning hub for my kids AHRADWANI.fun
+
+
+
 <!--
 **ahradwani/ahradwani** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
