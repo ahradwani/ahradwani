@@ -21,10 +21,10 @@ Using open source contributions.
 > Reading books. </br>
 
 
-
-<strong>My Main Domain <a href="http://AHRADWANI.com">AHRADWANI.com</a> </strong>
+<p>
+<strong>My Main Domain <a href="http://AHRADWANI.com">AHRADWANI.com</a> </strong></br>
 <small style="display: block; margin-top: 0px;">Python Projects, Photographies, Sketches</small>
-
+</p>
 
 ### Learning hub for my kids <a href="AHRADWANI.fun">AHRADWANI.fun</a> 
 <small style="display: block; margin-top: -15px;">Kids Learning Hub/Apps</small>
