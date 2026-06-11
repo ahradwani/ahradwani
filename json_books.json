@@ -1,0 +1,37 @@
+{
+    "definition": {
+        "file name": "jason_book",
+        "about": "json file to hold books information for learning purpose",
+        "version": "1.0.0",
+        "create_at": "2026-06-11T19:23:27.743Z",
+        "powered_by": "AHRADWANI.com"
+    },
+    "attributes": {
+        "books": [
+            {
+                "Title": "The Hobbit",
+                "Author": "J.R.R. Tolkien",
+                "Edition": "75th Anniversary Edition",
+                "Pages": 320
+            },
+            {
+                "Title": "To Kill a Mockingbird",
+                "Author": "Harper Lee",
+                "Edition": "50th Anniversary Edition",
+                "Pages": 323
+            },
+            {
+                "Title": "1863: A Year of Decision",
+                "Author": "Alan Nevins",
+                "Edition": "1st Edition",
+                "Pages": 512
+            },
+            {
+                "Title": "The Great Gatsby",
+                "Author": "F. Scott Fitzgerald",
+                "Edition": "Scribner Trade Paperback Edition",
+                "Pages": 180
+            }
+        ]
+    }
+}
