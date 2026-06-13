@@ -14,3 +14,9 @@ background-color: #f0f0f0; /* Light gray */
     border-radius: 4px;        /* Slightly rounds the corners */
     font-family: monospace;
 }
+.div_footer
+    {
+        background-color: #f0f0f0; /* Light gray */
+        padding: 10px; 
+        font: black; 
+    }
