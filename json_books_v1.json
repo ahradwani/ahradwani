@@ -1,13 +1,5 @@
 {
-    "definition": {
-        "file name": "jason_book",
-        "about": "json file to hold books information for learning purpose",
-        "version": "1.0.0",
-        "create_at": "2026-06-11T19:23:27.743Z",
-        "powered_by": "AHRADWANI.com"
-    },
-    "attributes": {
-        "books": [
+   "books":[  
             {
                 "Title": "The Hobbit",
                 "Author": "J.R.R. Tolkien",
@@ -31,7 +23,7 @@
                 "Author": "F. Scott Fitzgerald",
                 "Edition": "Scribner Trade Paperback Edition",
                 "Pages": 180
-            }
-        ]
-    }
+            }  
+    
+   ]
 }
