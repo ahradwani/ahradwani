@@ -1,4 +1,5 @@
-## Hi there 👋
+## Hi there 👋 
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=ahradwani&label=Profile%20views&color=0e75b6&style=flat" alt="ahradwani" /> </p>
 
 I'm a Software Developer with a passion for building accessible apps.
 
@@ -8,11 +9,11 @@ I'm a Software Developer with a passion for building accessible apps.
 > Python Projects. </br>
 > AI to create HTML sites.</br>
 
-<a href="https://ahradwani.com/pages/python-projects-index/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> My Python Projects Index </a>
+<a href="https://ahradwani.com/pages/python-projects-index/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> <strong>  My Python Projects Index</strong> </a> <small>[On my ahradwani.com site]</small><br>
 
-Share what I know, stay curious, and create space for myself and others to  **learn & grow**.
+🌱 Share what I know, stay curious, and create space for myself and others to  **learn & grow**.
 
-I enjoy **learing** technical concepts and share them.
+🌱 I enjoy **learing** technical concepts and share them.
 Using open source contributions.
 
 ### Outside of tech,
@@ -47,7 +48,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=ahradwani&label=Profile%20views&color=0e75b6&style=flat" alt="ahradwani" /> </p>
+
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
