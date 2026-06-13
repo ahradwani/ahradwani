@@ -1,13 +1,16 @@
 
 
 
-body
+.body
 {
 margen : 15;
 }
 
-code_block 
+.code-block 
 {
-margen : 20;
-color : gray;
+background-color: #f0f0f0; /* Light gray */
+    color: darkgreen;          /* Dark green font */
+    padding: 10px;             /* Adds space inside the box */
+    border-radius: 4px;        /* Slightly rounds the corners */
+    font-family: monospace;
 }
