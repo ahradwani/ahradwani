@@ -28,10 +28,23 @@
 
         
 
-<br><br> this is in object footer 
-        <object data="footer.html" type="text/html" width="100%"></object>
+<br><br> 
+
+<footer id="footer-placeholder"></footer>
 
 </body>
   
-  
+  <script>
+        function loadComponent(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                });
+        }
+
+        // Call the function for both pieces
+        loadComponent('header-placeholder', 'header.html');
+       // loadComponent('footer-placeholder', 'footer.html');
+    </script>
 
