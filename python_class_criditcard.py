@@ -2,6 +2,8 @@ class CriditCard :
     def __init__ (self, owner, balance):
         self.owner = owner 
         self.balance = balance
+        return print(f"Cridit Card Created for {self} and the Bakance is {self.balance}.")
+
 
     def cridit (self, amount) :
         # To add money to the card 
