@@ -95,15 +95,18 @@
         function addone_more() {
            let cleanNumber = addone(cleanNumber);
            consoleBox.innerText =" The New Score is: " + cleanNumber;
+            return;
             
         }
         function checkscore() {
              if (cleanNumber >=10){
                 consoleBox.innerText =" The Score is more than 10, you pass.!";
+                 return;
              }
              else
              {
                  consoleBox.innerText = "\n The Score is " +cleanNumber + " it is less than 10 . You need to \n Press on Add One More Function. ";
+                 return;
              }
          
          }
