@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>JS Lesson 1: Variables (Tablet Friendly)</title>
+    <link rel="stylesheet" href="my_style.css">
     <style>
-        <link rel="stylesheet" href="my_style.css">
+
 
         /* Simple styling to make it easy to read on a tablet screen */
         body {
@@ -50,18 +52,18 @@
       a box whose contents are locked and can never change (like your name or a fixed setting).</p>
 <lesson>
     In this lesson we will lear abot the <strong>let</strong> and <strong>const</strong>.
-    We can store a value in the let as let x = 5, let y="Qatar", let Myname="Coco Wawa".
-    The value in the let variable cna be changed during out program running time. So if we have let score = 5, then we can say score += 1
-    <br>
-    values in const will can't be cchanged, so if we name Myname = 'Coco Wawa' then it will not chabge.
-
-
-    <u>Codding Tip:</u>
-        in the HTML file we can write &lt button onklick="functionname()"&gt Button Name &lt/button&gt to show a button that
-    can be clicked to run a function.
+    We can store a value in the let as let x = 5, let y="Qatar", let Myname="Coco Wawa".<br>
+    The value in the let variable cna be changed during out program running time. <br>So if we have let score = 5, then we can say score += 1.
     
-</lesson>
+    <br>Values in const will can't be cchanged, so if we name Myname = 'Coco Wawa' then it will not chabge.
 
+
+    <p><u>Codding Tip:</u>
+        in the HTML file we can write &lt button onclick="function_name()"&gt Button Name &lt/button&gt to show a button that
+    can be clicked to run a function.
+    </p>
+</lesson>
+</br></br><br>
   
     <button onclick="viewBoxContents()">Show Box Contents</button>
     <button onclick="changeBoxContents()">Change Box Contents</button>
@@ -72,7 +74,7 @@
     <script>
         // Helper function to print text straight to our dark box on the  screen
         function printToScreen(text) {
-            const consoleBox = document.getElementById('screen-console');
+            const consoleBox = document.getElementById('screen-console'); // screen-console is a style or space (if we let it withe) that will show the function output
             // If it's the default message, clear it first
             if (consoleBox.innerText.includes("Output logs will appear here...")) {
                 consoleBox.innerText = "";
