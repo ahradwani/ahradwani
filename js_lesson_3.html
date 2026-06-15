@@ -90,18 +90,20 @@
 
             // 6. Print the beautiful math result back to the screen. [ \n mean new line]
             consoleBox.innerText = "📥 You entered: " + cleanNumber + "\n" +
-                                   "⚙️ Machine Output (Value + 1): " + finalResult;
+                                   "⚙️ Function Output (Value + 1): " + finalResult;
         }
         function addone_more() {
-           let cleanNumber = addone(cleanNumber)
+           let cleanNumber = addone(cleanNumber);
+           consoleBox.innerText =" The New Score is: " + cleanNumber;
+            
         }
         function checkscore() {
              if (cleanNumber >=10){
-                consoleBox.innerText =" The Score is more than 10, you pass.!"
+                consoleBox.innerText =" The Score is more than 10, you pass.!";
              }
-             else:
+             else
              {
-                 consoleBox.innerText = "\n The Score is " +cleanNumber + " it is less than 10 . You need to \n Press on Add One More Function. "
+                 consoleBox.innerText = "\n The Score is " +cleanNumber + " it is less than 10 . You need to \n Press on Add One More Function. ";
              }
          
          }
