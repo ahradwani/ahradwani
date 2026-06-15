@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Lesson 2: If / Else Decisions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        button {
+            padding: 12px 20px;
+            font-size: 1rem;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+        #screen-console {
+            background-color: #1e293b;
+            color: #38bdf8;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: monospace;
+            min-height: 150px;
+            white-space: pre-line;
+            margin-top: 20px;
+            font-size: 1.1rem;
+        }
+    </style>
+    <link rel="stylesheet" href="my_style.css?v=1">
+</head>
+<body>
+
+   
+        <h1>JavaScript Lesson 2: Making Decisions (If / Else)</h1>
+        <p>Current Passing Grade Target: <strong>50 Points</strong></p>
+    
+    <div class="lesson">
+      In If/Else we can do things based on the values in a variables. Say we have a  value as let the_score = 0 then in the <br>
+      application this value incresed, and we want the game end if the score reached 5.<br>
+      <br> So in the function called checkscore we will ask if the_score =  5  then we write End  of the game.!.
+      <br><br>
+      <p style="color:red">
+        function checkscore(the_score) {<br>
+          if (the_score =5) {
+             // Do somthing here to end the game 
+                }<br>
+           }<br>
+      </p>
+      
+   
+    </div>
+
+    <p>Simulate a student's score to see JavaScript make a decision:</p>
+    <button onclick="checkScore(75)">Test Score: 75</button>
+    <button onclick="checkScore(42)">Test Score: 42</button>
+    <button onclick="checkScore(50)">Test Score: 50</button>
+
+    <div id="screen-console">Output decisions will appear here...</div>
+
+    <script>
+        function printToScreen(text) {
+            const consoleBox = document.getElementById('screen-console');
+            if (consoleBox.innerText.includes("Output decisions will appear here...")) {
+                consoleBox.innerText = "";
+            }
+            consoleBox.innerText += text + "\n";
+        }
+
+        // Our core decision-making logic function
+        function checkScore(studentScore) {
+            printToScreen("Testing score: " + studentScore);
+
+            // Condition 1: Check if the score is greater than or equal to 50
+            if (studentScore >= 50) {
+                printToScreen("🎉 Result: Congratulations! You passed the lesson.");
+            } 
+            // Condition 2: If the condition above is false, do this instead
+            else {
+                printToScreen("❌ Result: Score is below 50. Keep practicing, you will get it next time!");
+            }
+
+            printToScreen("-----------------------------------------");
+        }
+    </script>
+
+</body>
+</html>
