@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Lesson 3: User Input Math</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        /* Styling our input box so it is easy to tap on a tablet */
+        input {
+            padding: 12px;
+            font-size: 1rem;
+            border-radius: 6px;
+            border: 2px solid #ccc;
+            width: 200px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 12px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 6px;
+            border: none;
+            background-color: #38bdf8;
+            color: white;
+            font-weight: bold;
+        }
+        #screen-console {
+            background-color: #1e293b;
+            color: #38bdf8;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: monospace;
+            min-height: 100px;
+            white-space: pre-line;
+            margin-top: 20px;
+            font-size: 1.1rem;
+        }
+    </style>
+    <link rel="stylesheet" href="my_style.css?v=1">
+</head>
+<body>
+
+    <div class="lesson">
+        <h1>JavaScript Lesson 3: Reading User Inputs</h1>
+        <p>Type a number below, and our machine will add 1 to it!</p>
+    </div>
+
+    Here we are waiting for the user to enter a value, then we will check the value.
+  
+    <input type="number" id="user-number-box" placeholder="Enter a number here">
+    
+    <button onclick="processInputData()">Run AddOne</button>
+
+    <div id="screen-console">Waiting for your input...</div>
+
+    <script>
+        // Our trusty math machine from before
+        function addOne(value) {
+            return value + 1;
+        }
+
+        // The function that bridges the HTML screen to our math logic
+        function processInputData() {
+            const consoleBox = document.getElementById('screen-console');
+            
+            # 3. Reach out and grab the raw string value from the HTML input box
+            let rawInput = document.getElementById('user-number-box').value;
+
+            // Safety check: Did the user click the button without typing anything?
+            if (rawInput === "") {
+                consoleBox.innerText = "⚠️ Please type a number in the box first!";
+                return; // Stop running the function right here
+            }
+
+            # 4. CRITICAL: Convert the text string into an actual mathematical number
+            let cleanNumber = Number(rawInput);
+
+            // 5. Run the number through our machine
+            let finalResult = addOne(cleanNumber);
+
+            // 6. Print the beautiful math result back to the screen
+            consoleBox.innerText = "📥 You entered: " + cleanNumber + "\n" +
+                                   "⚙️ Machine Output (Value + 1): " + finalResult;
+        }
+    </script>
+<div>
+</br></br> JS Lessons: <a href="js_lesson_1.html">Lesson 1: Variabules</a> | <a href="js_lesson_2.html">Lesson 2: if/else</a> | 
+        < a href="js_lesson_3.html">Lesson 3: User input</a>
+
+</div>
+  
+</body>
+</html>
