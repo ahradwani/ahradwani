@@ -1,60 +1,110 @@
 
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Lesson 1: Variables</title>
-  <link rel="stylesheet" href="my_style.css">
+    <title>JS Lesson 1: Variables (Tablet Friendly)</title>
+    <style>
+        <link rel="stylesheet" href="my_style.css">
+
+        /* Simple styling to make it easy to read on a tablet screen */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        button {
+            padding: 12px 20px;
+            font-size: 1rem;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+        /* This is our custom screen console box */
+        #screen-console {
+            background-color: #1e293b;
+            color: #38bdf8;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: monospace;
+            min-height: 150px;
+            white-space: pre-line; /* Keeps line breaks clean */
+            margin-top: 20px;
+            font-size: 1.1rem;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>JavaScript Lesson 1: Variables & The Console</h1>
+    <h1>JavaScript Lesson 1: Variables & Screen Output</h1>
+    <p>Tap the buttons below to interact with the JavaScript variables. The output will show in the dark box below!</p>
 
-<lesson>
-<div>
-  The Concept
-In programming, you need a way to remember data. Think of a Variable as a labeled storage box.
 
-We use let to create a box whose contents can change later (like a score in a game).
-
-We use const to create a box whose contents are locked and can never change (like your name or a fixed setting).
-  </div>
-  </lesson>
+    <p>The Concept In programming, you need a way to remember data. Think of a Variable as a labeled storage box. 
+      We use let to create a box whose contents can change later (like a score in a game). We use const to create 
+      a box whose contents are locked and can never change (like your name or a fixed setting).</p>
 
 
   
-    <p>Press <strong>F12</strong> (or Right-Click and choose <strong>Inspect</strong>), then click the <strong>Console</strong> tab to see JavaScript working behind the scenes!</p>
-
     <button onclick="viewBoxContents()">Show Box Contents</button>
     <button onclick="changeBoxContents()">Change Box Contents</button>
+    <button onclick="clearConsole()" style="background-color: #ef4444; color: white;">Clear Output</button>
+
+    <div id="screen-console">Output logs will appear here...</div>
 
     <script>
+        // Helper function to print text straight to our dark box on the  screen
+        function printToScreen(text) {
+            const consoleBox = document.getElementById('screen-console');
+            // If it's the default message, clear it first
+            if (consoleBox.innerText.includes("Output logs will appear here...")) {
+                consoleBox.innerText = "";
+            }
+            consoleBox.innerText += text + "\n";
+        }
+
+        function clearConsole() {
+            document.getElementById('screen-console').innerText = "Output logs will appear here...";
+        }
+
         // 1. We create a locked box using 'const' (Cannot be changed later)
         const developerName = "Future JS Master";
 
         // 2. We create a flexible box using 'let' (Can be changed later)
         let standardScore = 10;
 
-        // This function prints the starting data to your browser console
+        // This function prints the starting data to your screen box
         function viewBoxContents() {
-            console.log("--- Current Box Status ---");
-            console.log("Developer Name (const): " + developerName);
-            console.log("Current Score (let): " + standardScore);
+            printToScreen("--- Current Box Status ---");
+            printToScreen("Developer Name (const): " + developerName);
+            printToScreen("Current Score (let): " + standardScore);
+            printToScreen("---------------------------");
         }
 
         // This function modifies the flexible box and shows the result
         function changeBoxContents() {
-            console.log("--- Changing Data Now ---");
+            printToScreen("--- Changing Data Now ---");
             
             // We add 5 points to our score box
             standardScore = standardScore + 5; 
-            console.log("New Updated Score: " + standardScore);
+            printToScreen("New Updated Score: " + standardScore);
+            printToScreen("---------------------------");
 
-            // TRY THIS: Uncomment the line below by removing the '//' to see what happens when you try to change a const!
-            // developerName = "Someone Else"; 
+            // TRY THIS: To see an error on a tablet, we can catch it and display it!
+            /*
+            try {
+                developerName = "Someone Else"; 
+            } catch(err) {
+                printToScreen("❌ Error: " + err.message);
+            }
+            */
         }
     </script>
 
 </body>
-</html>
+</html>  
