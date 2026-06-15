@@ -52,7 +52,7 @@
         <p>Type a number below, and our machine will add 1 to it!</p>
     </div>
 
-    Here we are waiting for the user to enter a value, then we will check the value.
+    Here we are waiting for the user to enter a value, then we will add one to it .</br>
   
     <input type="number" id="user-number-box" placeholder="Enter a number here">
     
@@ -90,9 +90,47 @@
                                    "⚙️ Machine Output (Value + 1): " + finalResult;
         }
     </script>
-<div>
+
+    <div style="color:gray">
+        <h3>The Functions </h3>
+        <br>// function to add one and return the new value
+        <br>function addOne(value) {
+           <br> return value + 1;
+        <br>}
+<br>
+
+        <br> // The function that bridges the HTML screen to our math logic
+        <br>function processInputData() {
+           <br> const consoleBox = document.getElementById('screen-console');
+            
+            <br># 3. Reach out and grab the raw string value from the HTML input box
+            <br>let rawInput = document.getElementById('user-number-box').value;
+
+            <br>// Safety check: Did the user click the button without typing anything?
+            <br>if (rawInput === "") {
+                <br>consoleBox.innerText = "⚠️ Please type a number in the box first!";
+                <br>return; // Stop running the function right here
+            <br>}
+
+            <br># 4. CRITICAL: Convert the text string into an actual mathematical number
+            <br>let cleanNumber = Number(rawInput);
+
+            <br>// 5. Run the number through our machine
+            <br>let finalResult = addOne(cleanNumber);
+
+            <br>// 6. Print the beautiful math result back to the screen
+            <br>consoleBox.innerText = "📥 You entered: " + cleanNumber + "\n" +
+                                   "⚙️ Machine Output (Value + 1): " + finalResult;
+        <br>}
+
+<br><br>
+        
+    </div>
+    
+    <div>
+        
 </br></br> JS Lessons: <a href="js_lesson_1.html">Lesson 1: Variabules</a> | <a href="js_lesson_2.html">Lesson 2: if/else</a> | 
-        < a href="js_lesson_3.html">Lesson 3: User input</a>
+        <a href="js_lesson_3.html">Lesson 3: User input</a>
 
 </div>
   
