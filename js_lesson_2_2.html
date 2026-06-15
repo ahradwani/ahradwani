@@ -1,45 +1,46 @@
-
+<html>
 
 <a href="js_lesson_2.html> Go to Lesson 2, If/Else </a><br>
 
 <h2>JavaScript Lesson 2: If / else</h2>
-
+<p>
 In this function, we set the score to 5 using let score =5 <br>
 we create a function to add one to the score. and we use the functions by call them.<br>
 if our function returning   a value, we need to store that value in a variabule, here we call the function like this:<br>
 score = addone(score); // so the old sciore value will changed by adding one.<br><br>
 another function called <strong>checkscore</strong> it will take a value, check the value if it is 8  then will write something<br> 
 if the value is less that 8, then another thing will be shown on the screen.<br>
-
+</p>
 
 <div class="code-block">
-function addone(v1) {
+function addone(v1) {<br>
     
-    return v1 +=1
-}
+    return v1 +=1<br>
+}<br>
 
-let score = 5
+let score = 5<br>
 
-function checkscore(v1){
+function checkscore(v1){<br>
     
-    if (v1 >= 8) {
-        console.log("\n The value is ", v1," so we reach the target."); }
-    else {
-        console.log("  You need ", 8 - v1 ," more points to finish. ")  
+    if (v1 >= 8) {<br>
+        console.log("\n The value is ", v1," so we reach the target."); }<br>
+    else {<br>
+        console.log("  You need ", 8 - v1 ," more points to finish. ")  <br>
     
-    }
+    }<br>
     
-}
+}<br>
 
-console.log("Starting Value: ",score);
-
-
-console.log ("we just add 1 to the score, the new score  is: ", score =addone(score));
-checkscore(score); 
-score = addone(score);
-
-checkscore(score) ;
-
-score = addone(score);
-checkscore(score) ;
+console.log("Starting Value: ",score);<br>
+console.log ("We just add 1 to the score, the new score  is: ", score =addone(score));<br>
+// we call the checkscore to check if er reach 8<br>
+checkscore(score); <br>
+// here we call addone to the score <br>
+score = addone(score);<br>
+checkscore(score) ;<br>
+score = addone(score);<br>
+checkscore(score) ;<br>
 </div>
+
+    
+</html>
