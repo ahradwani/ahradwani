@@ -70,7 +70,7 @@
         function processInputData() {
             const consoleBox = document.getElementById('screen-console');
             
-            # 3. Reach out and grab the raw string value from the HTML input box
+            // 3. Reach out and grab the raw string value from the HTML input box
             let rawInput = document.getElementById('user-number-box').value;
 
             // Safety check: Did the user click the button without typing anything?
@@ -79,7 +79,7 @@
                 return; // Stop running the function right here
             }
 
-            # 4. CRITICAL: Convert the text string into an actual mathematical number
+            // 4. CRITICAL: Convert the text string into an actual mathematical number
             let cleanNumber = Number(rawInput);
 
             // 5. Run the number through our machine
@@ -101,18 +101,18 @@
 
         <br> // The function that bridges the HTML screen to our math logic
         <br>function processInputData() {
-           <br> const consoleBox = document.getElementById('screen-console');
+           <br>     const consoleBox = document.getElementById('screen-console');
             
-            <br># 3. Reach out and grab the raw string value from the HTML input box
-            <br>let rawInput = document.getElementById('user-number-box').value;
+            <br>    // 3. Reach out and grab the raw string value from the HTML input box
+            <br>    let rawInput = document.getElementById('user-number-box').value;
 
-            <br>// Safety check: Did the user click the button without typing anything?
-            <br>if (rawInput === "") {
-                <br>consoleBox.innerText = "⚠️ Please type a number in the box first!";
-                <br>return; // Stop running the function right here
+            <br>    // Safety check: Did the user click the button without typing anything?
+            <br>    if (rawInput === "") {
+                <br>    consoleBox.innerText = "⚠️ Please type a number in the box first!";
+                <br>    return; // Stop running the function right here
             <br>}
 
-            <br># 4. CRITICAL: Convert the text string into an actual mathematical number
+            <br>// 4. CRITICAL: Convert the text string into an actual mathematical number
             <br>let cleanNumber = Number(rawInput);
 
             <br>// 5. Run the number through our machine
