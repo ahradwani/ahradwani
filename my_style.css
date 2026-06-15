@@ -10,7 +10,7 @@ margen: 20px;
 {
 background-color: #f0f0f0; /* Light gray */
     color: darkgreen;          /* Dark green font */
-    padding: 10px;             /* Adds space inside the box */
+    padding: 25px;             /* Adds space inside the box */
     border-radius: 4px;        /* Slightly rounds the corners */
     font-family: monospace;
 }
@@ -26,5 +26,5 @@ background-color: #f0f0f0; /* Light gray */
 {
         background-color: #f0f0f0; /* Light gray */
         padding: 25px; 
-        font: green;
+        font: black;
 }
