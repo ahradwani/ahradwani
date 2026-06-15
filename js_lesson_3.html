@@ -56,12 +56,15 @@
   
     <input type="number" id="user-number-box" placeholder="Enter a number here">
     
-    <button onclick="processInputData()">Run AddOne</button>
+    <button onclick="processInputData()">Run AddOne</button> 
+    <button onclick="addone_more()"> Add One More </button> <br>
+    <button onclick="checkscore()">Check Score"</button>
+
 
     <div id="screen-console">Waiting for your input...</div>
 
     <script>
-        // Our trusty math machine from before
+        // function to add one to the passed value
         function addOne(value) {
             return value + 1;
         }
@@ -82,18 +85,34 @@
             // 4. CRITICAL: Convert the text string into an actual mathematical number
             let cleanNumber = Number(rawInput);
 
-            // 5. Run the number through our machine
+            // 5. Run the number through addone function
             let finalResult = addOne(cleanNumber);
 
-            // 6. Print the beautiful math result back to the screen
+            // 6. Print the beautiful math result back to the screen. [ \n mean new line]
             consoleBox.innerText = "📥 You entered: " + cleanNumber + "\n" +
                                    "⚙️ Machine Output (Value + 1): " + finalResult;
+        
+        function addone_more() {
+           let cleanNumber = addone(cleanNumber)
+        }
+        function checkscore() {
+             if (cleanNumber >=10){
+                consoleBox.innerText =" The Score is more than 10, you pass.!"
+             }
+             else:
+             {
+                 consoleBox.innerText = "\n The Score is " +cleanNumber + " it is less than 10 . You need to \n Press on Add One More Function. "
+             }
+         
+         }
+            
+        
         }
     </script>
 
-    <div style="color:gray">
-        <h3>The Functions </h3>
-        <br>// function to add one and return the new value
+    <br><div style="color:gray">
+        <h3>The Functions in this lesson: </h3>
+        <br>// function to add one to the passed value
         <br>function addOne(value) {
            <br> return value + 1;
         <br>}
@@ -118,7 +137,7 @@
             <br>// 5. Run the number through our machine
             <br>let finalResult = addOne(cleanNumber);
 
-            <br>// 6. Print the beautiful math result back to the screen
+            <br>// 6. Print the beautiful math result back to the screen 
             <br>consoleBox.innerText = "📥 You entered: " + cleanNumber + "\n" +
                                    "⚙️ Machine Output (Value + 1): " + finalResult;
         <br>}
