@@ -99,14 +99,15 @@
         function addone_more() {
            userinputnumber = addone(userinputnumber);
            const consoleBox = document.getElementById('screen-console');
-           consoleBox.innerText =" The New Score is: " + userinputnumber;
-           //return;
+           consoleBox.innerText = " The New Score is: " + userinputnumber + ", now Press check the score again! "; 
+            
+           return;
             
         }
         function checkscore() {
              const consoleBox = document.getElementById('screen-console');
              if (userinputnumber >=10){
-                consoleBox.innerText =" The Score is more than 10, you pass.!";
+                consoleBox.innerText =" The Score is more than 10, YOU PASS...!";
                 return;
              }
              else
