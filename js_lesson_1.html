@@ -77,7 +77,28 @@
         <a href="js_lesson_3.html">Lesson 3: User input</a>
 
 </div>
+
+    
+
+<footer id="footer-placeholder"></footer>
     <script>
+
+
+        function loadComponent(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                });
+        }
+
+        // Call the function for both pieces
+        // loadComponent('header-placeholder', 'header.html');
+        loadComponent('footer-placeholder', 'js_lesson_footer.html');
+    
+
+
+        
         // Helper function to print text straight to our dark box on the  screen
         function printToScreen(text) {
             const consoleBox = document.getElementById('screen-console'); // screen-console is a style or space (if we let it withe) that will show the function output
