@@ -93,7 +93,23 @@ returns true or false based on item presence.</br></br>
 </body>
     <div id="screen-console">Waiting for your input...</div>
 
-  <script>
+
+    <footer id="footer-placeholder"></footer>
+    <script>
+
+
+        function loadComponent(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                });
+        }
+
+        // Call the function for both pieces
+        // loadComponent('header-placeholder', 'header.html');
+        loadComponent('footer-placeholder', 'js_lesson_footer.html');
+    
       const consoleBox = document.getElementById('screen-console');
       const = userinputitem = document.getElementById('useritem');
 
