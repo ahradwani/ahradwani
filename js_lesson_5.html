@@ -94,7 +94,8 @@ returns true or false based on item presence.</br></br>
     <div id="screen-console">Waiting for your input...</div>
 
   <script>
-   const consoleBox = document.getElementById('screen-console');
+      const consoleBox = document.getElementById('screen-console');
+      const = userinputitem = document.getElementById('useritem');
 
       // we create the list
     let the_list =["Apple","Box","Car","Bannana","Orange","Circle"]
@@ -105,14 +106,20 @@ returns true or false based on item presence.</br></br>
       
     // Function to add the item  to the end of the list
     function addtofirstlist(){
-        consoleBox.innerText =" the text: " + the_list ;
-        item = 'coco';
-        return list.unshift(item) ;
+        consoleBox.value =" Current List is: " + the_list + "\n the user input " + userinputitem;
+        //item = 'coco';
+        list.unshift(userinputitem) ;
+        consoleBox.value =" The New List is: " + the_list ;
+        
+        return 
      } 
       
     function addtoendlist(){
-        consoleBox.value =" the text: " + the_list ;
-        return list.push('Wawa') ;
+        consoleBox.value =" \n - - - -  - - - - - - - - - \n The New list is  " + the_list ;
+        list.push(document.getElementById('useritem')) ;
+        consoleBox.value =" \n The New value added at the End is  " + the_list ;
+        
+        return ; 
 
     }
    
