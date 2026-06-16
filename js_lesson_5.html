@@ -87,7 +87,7 @@ returns true or false based on item presence.</br></br>
 <button onclick="deletefirstitem()">Delete First of list</button>&nbsp;&nbsp;
 <code-block>
   <br> <br>// We will create a List with initial items:</br>
-  <br>let the_list =["Apple","Box","Car","Bannana","Orange","Circle"]</br> 3
+  <br>let the_list =["Apple","Box","Car","Bannana","Orange","Circle"]</br> 4
 
 </code-block>
 
@@ -123,8 +123,10 @@ returns true or false based on item presence.</br></br>
         
      function printToScreen(text) {
             const consoleBox = document.getElementById('screen-console');
-            consoleBox.innerText= "";     
-            consoleBox.innerText += text + "\n";
+            if consoleBox.innerText= "Enter an item to added to the list." {
+                consoleBox.innerText= "";     
+                 }
+                consoleBox.innerText += text + "\n";
         }
         
     // Function to add the item  to the end of the list
@@ -137,13 +139,15 @@ returns true or false based on item presence.</br></br>
         return 
      } 
      function deletelastitem() {
-            printToScreen(" i am a text") ;
+         the_list.pop() ;
+         printToScreen("\n The last item been removed.\n The new List is: " +the_list) ;
      }
       
     function addtoendlist(){
         //consoleBox.value =" \n - - - -  - - - - - - - - - \n The New list is  " + the_list ;
-        the_list.push(document.getElementById('useritem').value) ;
-        printToScreen(" \n The New value added at the End is  " + the_list)
+        the_list.push(userinputitem) ;
+        printToScreen(" \n The New value added at the End isof the list is   " + userinputitem)
+        printToScreen("\n Now the items in the List are: " + the_list);
       //  consoleBox.innerText =" \n The New value added at the End is  " + the_list ;
         
         return ; 
