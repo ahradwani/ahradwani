@@ -48,8 +48,9 @@
       <br><br>
       <p style="color:red">
         function checkscore(the_score) {<br>
-          if (the_score =5) {
-             // Do somthing here to end the game 
+          if (the_score =5) {<br>
+             // Do somthing here to end the game.<br> 
+             
                 }<br>
            }<br>
       </p>
@@ -68,12 +69,7 @@
 
     <br><br><a href="js_lesson_2_2.html"> Another if/else functioin code </a>
 
-    <div>
-</br></br> JS Lessons: <a href="js_lesson_1.html">Lesson 1: Variabules</a> | <a href="js_lesson_2.html">Lesson 2: if/else</a> | 
-        < a href="js_lesson_3.html">Lesson 3: User input</a>
-
-</div>
-
+    
 <footer id="footer-placeholder"></footer>
     <script>
 
@@ -116,5 +112,33 @@
         }
     </script>
 
+<div style="color:gray">
+</br></br>function printToScreen(text) {</br>
+// function to print to the screen, we can use this code in all other codes to print to the screen.</br>
+&nbsp;&nbsp;&nbsp;&nbsp;const consoleBox = document.getElementById('screen-console');</br>
+&nbsp;&nbsp;&nbsp;&nbsp;if (consoleBox.innerText.includes("Output decisions will appear here...")) </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;consoleBox.innerText = "";</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;consoleBox.innerText += text + "\n";</br>
+&nbsp;&nbsp;&nbsp;&nbsp;}</br>
+</br>
+&nbsp;&nbsp;// Our core decision-making logic function</br>
+</br></br>&nbsp;&nbsp;function checkScore(studentScore) {</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printToScreen("Testing score: " + studentScore);</br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Condition 1: Check if the score is greater than or equal to 50</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (studentScore &gt;= 50) {</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printToScreen("🎉 Result: Congratulations! You passed the lesson.");</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Condition 2: If the condition above is false, do this instead</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else {</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printToScreen("❌ Result: Score is below 50. Keep practicing, you will get it next time!");</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printToScreen("-----------------------------------------");</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</br>
+
+</div>
 </body>
 </html>
