@@ -64,7 +64,24 @@
 
     <div id="screen-console">Waiting for your input...</div>
 
+
+<footer id="footer-placeholder"></footer>
     <script>
+
+
+        function loadComponent(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                });
+        }
+
+        // Call the function for both pieces
+        // loadComponent('header-placeholder', 'header.html');
+        loadComponent('footer-placeholder', 'js_lesson_footer.html');
+    
+
         // function to add one to the passed value
         let userinputnumber = 0;
         function addOne(value) {
