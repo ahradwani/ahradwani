@@ -87,7 +87,7 @@ returns true or false based on item presence.</br></br>
 <button onclick="deletefirstitem()">Delete First of list</button>&nbsp;&nbsp;
 <code-block>
   <br> <br>// We will create a List with initial items:</br>
-  <br>let the_list =["Apple","Box","Car","Bannana","Orange","Circle"]</br> 4
+  <br>let the_list =["Apple","Box","Car","Bannana","Orange","Circle"]</br> 5
 
 </code-block>
 
@@ -119,22 +119,23 @@ returns true or false based on item presence.</br></br>
 
       // first we will create the function to show the output to the screen.
       
-     consoleBox.value =" Current List is: " + the_list ;
+     consoleBox.innerText =" Current List is: " + the_list ;
         
      function printToScreen(text) {
             const consoleBox = document.getElementById('screen-console');
             if consoleBox.innerText= "Enter an item to added to the list." {
                 consoleBox.innerText= "";     
                  }
+            else {
                 consoleBox.innerText += text + "\n";
+            }
         }
         
     // Function to add the item  to the end of the list
     function addtofirstlist(){
                 //item = 'coco';
         the_list.unshift(userinputitem) ;
-        printToScreen(" The New List is: " + the_list + "\n the [" + userinputitem + "] added as first item.")
-        //consoleBox.value =" The New List is: " + the_list + "\n the [" + userinputitem + "] added as first item.";
+        printToScreen(" The New List is: " + the_list + "\n the [" + userinputitem + "] added as first item.");em.";
         
         return 
      } 
@@ -146,7 +147,7 @@ returns true or false based on item presence.</br></br>
     function addtoendlist(){
         //consoleBox.value =" \n - - - -  - - - - - - - - - \n The New list is  " + the_list ;
         the_list.push(userinputitem) ;
-        printToScreen(" \n The New value added at the End isof the list is   " + userinputitem)
+        printToScreen(" \n The New value added at the End isof the list is   " + userinputitem);
         printToScreen("\n Now the items in the List are: " + the_list);
       //  consoleBox.innerText =" \n The New value added at the End is  " + the_list ;
         
