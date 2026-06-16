@@ -112,7 +112,7 @@ returns true or false based on item presence.</br></br>
         loadComponent('footer-placeholder', 'js_lesson_footer.html');
     
       //const consoleBox = document.getElementById('screen-console');
-      const = userinputitem = document.getElementById('useritem');
+      const  userinputitem = document.getElementById('useritem');
 
       // we create the list
     let the_list =["Apple","Box","Car","Bannana","Orange","Circle"]
@@ -123,8 +123,8 @@ returns true or false based on item presence.</br></br>
         
      function printToScreen(text) {
             const consoleBox = document.getElementById('screen-console');
-            consoleBox.value = "";     
-            consoleBox.value += text + "\n";
+            consoleBox.innerText= "";     
+            consoleBox.innerText += text + "\n";
         }
         
     // Function to add the item  to the end of the list
@@ -142,9 +142,9 @@ returns true or false based on item presence.</br></br>
       
     function addtoendlist(){
         //consoleBox.value =" \n - - - -  - - - - - - - - - \n The New list is  " + the_list ;
-        the_list.push(document.getElementById('useritem')) ;
+        the_list.push(document.getElementById('useritem').value) ;
         printToScreen(" \n The New value added at the End is  " + the_list)
-      //  consoleBox.value =" \n The New value added at the End is  " + the_list ;
+      //  consoleBox.innerText =" \n The New value added at the End is  " + the_list ;
         
         return ; 
 
