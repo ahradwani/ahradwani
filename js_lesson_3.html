@@ -66,12 +66,13 @@
 
     <script>
         // function to add one to the passed value
+        let userinputnumber = 0;
         function addOne(value) {
             return value + 1;
         }
 
         // The function that bridges the HTML screen to our math logic
-        function processInputData() {
+       userinputnumber =  function processInputData() {
             const consoleBox = document.getElementById('screen-console');
             
             // 3. Reach out and grab the raw string value from the HTML input box
@@ -80,7 +81,7 @@
             // Safety check: Did the user click the button without typing anything?
             if (rawInput === "") {
                 consoleBox.innerText = "⚠️ Please type a number in the box first!";
-                return; // Stop running the function right here
+                return ; // Stop running the function right here
             }
 
             // 4. CRITICAL: Convert the text string into an actual mathematical number
@@ -92,23 +93,24 @@
             // 6. Print the beautiful math result back to the screen. [ \n mean new line]
             consoleBox.innerText = "📥 You entered: " + cleanNumber + "\n" +
                                    "⚙️ Function Output (Value + 1): " + finalResult;
+            return cleanNumber
         }
         function addone_more() {
-           let cleanNumber = addone(cleanNumber);
+           userinputnumber = addone(userinputnumber);
            const consoleBox = document.getElementById('screen-console');
-           consoleBox.innerText =" The New Score is: " + cleanNumber;
-            return;
+           consoleBox.innerText =" The New Score is: " + userinputnumber;
+           //return;
             
         }
         function checkscore() {
              const consoleBox = document.getElementById('screen-console');
-             if (cleanNumber >=10){
+             if (userinputnumber >=10){
                 consoleBox.innerText =" The Score is more than 10, you pass.!";
-                 return;
+                return;
              }
              else
              {
-                 consoleBox.innerText = "\n The Score is " +cleanNumber + " it is less than 10 . You need to \n Press on Add One More Function. ";
+                 consoleBox.innerText = "\n The Score is " +userinputnumber + " it is less than 10 . You need to \n Press on Add One More Function. ";
                  return;
              }
          
