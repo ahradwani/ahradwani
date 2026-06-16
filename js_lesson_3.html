@@ -58,7 +58,7 @@
     
     <button onclick="processInputData()">Run AddOne</button> <br> 
     <button onclick="checkscore()">Check Score"</button> | 
-    <button onclick="addone_more()"> Add One More </button> <small>Add One More then Check the Score!.</small> 
+    <button onclick="addOneMore()"> Add One More </button> <small>Add One More then Check the Score!.</small> 
     
 
 
@@ -96,7 +96,8 @@
                                    "⚙️ Function Output (Value + 1): " + finalResult;
             return 
         }
-        function addone_more() {
+        
+        function addOneMore() {
            userinputnumber = addone(userinputnumber);
            const consoleBox = document.getElementById('screen-console');
            consoleBox.innerText = " The New Score is: " + userinputnumber + ", now Press check the score again! "; 
