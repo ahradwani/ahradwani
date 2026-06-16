@@ -77,12 +77,12 @@ Check contents: fruits.includes("banana"); </br>
 returns true or false based on item presence.</br></br>
 </p>
 
-<button onclick="addtoendlist()">Add at END of list</button>
-<button onclick="addtofirstlist()">Add at FIRST of list</button>
-<button onclick="deletelastitem()">Delete LAST of list</button>
-<button onclick="deletefirstitem()">Delete First of list</button>
+<button onclick="addtoendlist()">Add at END of list</button>&nbsp;&nbsp;
+<button onclick="addtofirstlist()">Add at FIRST of list</button>&nbsp;&nbsp;
+<button onclick="deletelastitem()">Delete LAST of list</button>&nbsp;&nbsp;
+<button onclick="deletefirstitem()">Delete First of list</button>&nbsp;&nbsp;
 <code-block>
-  <br>// List with initial items</br>
+  <br> <br>// We will create a List with initial items:</br>
   <br>let the_list =["Apple","Box","Car","Bannana","Orange","Circle"]</br>
 
 </code-block>
@@ -93,7 +93,15 @@ returns true or false based on item presence.</br></br>
     // we create the list
     let the_list =["Apple","Box","Car","Bannana","Orange","Circle"]
 
+      // first we will create the function to show the output to the screen.
+      
 
+      
+    // Function to add the item  to the end of the list
+    function addTolist(list,item){
+   
+        return list.push(item) ;
+   } 
     
     
   </script>
