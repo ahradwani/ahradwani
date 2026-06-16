@@ -73,7 +73,24 @@
         < a href="js_lesson_3.html">Lesson 3: User input</a>
 
 </div>
+
+<footer id="footer-placeholder"></footer>
     <script>
+
+
+        function loadComponent(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                });
+        }
+
+        // Call the function for both pieces
+        // loadComponent('header-placeholder', 'header.html');
+        loadComponent('footer-placeholder', 'js_lesson_footer.html');
+
+        
         function printToScreen(text) {
             const consoleBox = document.getElementById('screen-console');
             if (consoleBox.innerText.includes("Output decisions will appear here...")) {
