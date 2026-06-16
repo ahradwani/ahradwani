@@ -98,11 +98,12 @@
         }
         
         function addOneMore() {
-           userinputnumber = addone(userinputnumber);
-           const consoleBox = document.getElementById('screen-console');
-           consoleBox.innerText = " The New Score is: " + userinputnumber + ", now Press check the score again! "; 
-            
-           return;
+            const consoleBox = document.getElementById('screen-console');
+            userinputnumber = addOne(userinputnumber);
+           //const consoleBox = document.getElementById('screen-console');
+           //const consoleBox = document.getElementById('screen-console');
+            consoleBox.innerText = " The New Score is: " + userinputnumber + ", now Press check the score again! "; 
+            return;
             
         }
         function checkscore() {
