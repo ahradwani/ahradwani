@@ -93,7 +93,7 @@ returns true or false based on item presence.</br></br>
 
     <div id="screen-console">Waiting for your input...</div>
 
-
+<p></p>
     <footer id="footer-placeholder"></footer>
 
     <script>
@@ -123,10 +123,8 @@ returns true or false based on item presence.</br></br>
         
      function printToScreen(text) {
             const consoleBox = document.getElementById('screen-console');
-          //  if (consoleBox.innerText.includes("Output decisions will appear here...")) {
-                consoleBox.innerText = "";
-           // }
-            consoleBox.innerText += text + "\n";
+            consoleBox.value = "";     
+            consoleBox.value += text + "\n";
         }
         
     // Function to add the item  to the end of the list
@@ -138,6 +136,9 @@ returns true or false based on item presence.</br></br>
         
         return 
      } 
+     function deletelastitem() {
+            printToScreen(" i am a text") ;
+     }
       
     function addtoendlist(){
         //consoleBox.value =" \n - - - -  - - - - - - - - - \n The New list is  " + the_list ;
