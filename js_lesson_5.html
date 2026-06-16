@@ -77,6 +77,10 @@ Check contents: fruits.includes("banana"); </br>
 returns true or false based on item presence.</br></br>
 </p>
 
+
+<input type="text" id="useritem" placeholder="Enter an item to added to the list.">
+
+    
 <button onclick="addtoendlist()">Add at END of list</button>&nbsp;&nbsp;
 <button onclick="addtofirstlist()">Add at FIRST of list</button>&nbsp;&nbsp;
 <button onclick="deletelastitem()">Delete LAST of list</button>&nbsp;&nbsp;
@@ -87,10 +91,12 @@ returns true or false based on item presence.</br></br>
 
 </code-block>
 </body>
-
+    <div id="screen-console">Waiting for your input...</div>
 
   <script>
-    // we create the list
+   const consoleBox = document.getElementById('screen-console');
+
+      // we create the list
     let the_list =["Apple","Box","Car","Bannana","Orange","Circle"]
 
       // first we will create the function to show the output to the screen.
@@ -98,11 +104,19 @@ returns true or false based on item presence.</br></br>
 
       
     // Function to add the item  to the end of the list
-    function addTolist(list,item){
+    function addtofirstlist(){
+        consoleBox.innerText =" the text: " + the_list ;
+        item = 'coco';
+        return list.unshift(item) ;
+     } 
+      
+    function addtoendlist(){
+        consoleBox.value =" the text: " + the_list ;
+        return list.push('Wawa') ;
+
+    }
    
-        return list.push(item) ;
-   } 
-    
+      
     
   </script>
 </html>
