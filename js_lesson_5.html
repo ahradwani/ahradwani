@@ -102,21 +102,21 @@ returns true or false based on item presence.</br></br>
 
       // first we will create the function to show the output to the screen.
       
-
+     consoleBox.value =" Current List is: " + the_list ;
+        
       
     // Function to add the item  to the end of the list
     function addtofirstlist(){
-        consoleBox.value =" Current List is: " + the_list + "\n the user input " + userinputitem;
-        //item = 'coco';
-        list.unshift(userinputitem) ;
-        consoleBox.value =" The New List is: " + the_list ;
+                //item = 'coco';
+        the_list.unshift(userinputitem) ;
+        consoleBox.value =" The New List is: " + the_list + "\n the [" + userinputitem + "] added as first item.";
         
         return 
      } 
       
     function addtoendlist(){
-        consoleBox.value =" \n - - - -  - - - - - - - - - \n The New list is  " + the_list ;
-        list.push(document.getElementById('useritem')) ;
+        //consoleBox.value =" \n - - - -  - - - - - - - - - \n The New list is  " + the_list ;
+        the_list.push(document.getElementById('useritem')) ;
         consoleBox.value =" \n The New value added at the End is  " + the_list ;
         
         return ; 
