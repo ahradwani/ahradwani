@@ -110,7 +110,7 @@ returns true or false based on item presence.</br></br>
         // loadComponent('header-placeholder', 'header.html');
         loadComponent('footer-placeholder', 'js_lesson_footer.html');
     
-      const consoleBox = document.getElementById('screen-console');
+      //const consoleBox = document.getElementById('screen-console');
       const = userinputitem = document.getElementById('useritem');
 
       // we create the list
@@ -120,12 +120,20 @@ returns true or false based on item presence.</br></br>
       
      consoleBox.value =" Current List is: " + the_list ;
         
-      
+     function printToScreen(text) {
+            const consoleBox = document.getElementById('screen-console');
+          //  if (consoleBox.innerText.includes("Output decisions will appear here...")) {
+                consoleBox.innerText = "";
+           // }
+            consoleBox.innerText += text + "\n";
+        }
+        
     // Function to add the item  to the end of the list
     function addtofirstlist(){
                 //item = 'coco';
         the_list.unshift(userinputitem) ;
-        consoleBox.value =" The New List is: " + the_list + "\n the [" + userinputitem + "] added as first item.";
+        printToScreen(" The New List is: " + the_list + "\n the [" + userinputitem + "] added as first item.")
+        //consoleBox.value =" The New List is: " + the_list + "\n the [" + userinputitem + "] added as first item.";
         
         return 
      } 
@@ -133,7 +141,8 @@ returns true or false based on item presence.</br></br>
     function addtoendlist(){
         //consoleBox.value =" \n - - - -  - - - - - - - - - \n The New list is  " + the_list ;
         the_list.push(document.getElementById('useritem')) ;
-        consoleBox.value =" \n The New value added at the End is  " + the_list ;
+        printToScreen(" \n The New value added at the End is  " + the_list)
+      //  consoleBox.value =" \n The New value added at the End is  " + the_list ;
         
         return ; 
 
