@@ -1,0 +1,25 @@
+:root
+{
+  --bg: #1c1917 ;
+  --border: #3f3632;
+  --surface:#292524 ;
+  --surface-2:#3a3330;
+  --accent: #c8956c;
+  --accent-dim: #8c6040;
+  --shadow: 0 8px 32px rgba(0,0,0,0.45);
+  --radius:16px;
+}
+
+.panel_1
+{
+  background: var(--surface) ;
+  border: 1px solid var(--border);
+  border-radius: var(--radius) ;
+  padding: 1.5rem;
+  display: flex;
+  fles-direction: column;
+  gap: 1.5rem;
+  flex: 0 0 250px ;
+
+
+}
