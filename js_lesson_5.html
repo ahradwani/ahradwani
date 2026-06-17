@@ -11,7 +11,6 @@
             background-color: #f0f4f8;
             color: #333;
         }
-        /* Styling our input box so it is easy to tap on a tablet */
         input {
             padding: 12px;
             font-size: 1rem;
@@ -30,6 +29,7 @@
             background-color: #38bdf8;
             color: white;
             font-weight: bold;
+            margin-bottom: 5px;
         }
         #screen-console {
             background-color: #1e293b;
@@ -52,114 +52,96 @@
         <p>Create, edit the list in JS. </p>
     </div>
 
+    <p>
+    <strong>Common List Operations:</strong> JavaScript provides built-in methods to easily change your list:<br><br>
+    Create a list: <code>let things = ["item1", "item2"]</code><br>
+    Add to end: <code>fruits.push("mango");</code><br>
+    Add to start: <code>fruits.unshift("apricot");</code><br>
+    Remove from end: <code>fruits.pop();</code><br>
+    Remove from start: <code>fruits.shift();</code>
+    </p>
 
-
-<p>
-Common List OperationsJavaScript provides built-in methods to easily change or query your list:</br>
-create a list: things=["item1","item2","item3",..]</br></br>
-
-Add to end of the list: fruits.push("mango"); <br>
-adds an item to the very bottom of the list.</br></br>
-
-Add to start: fruits.unshift("apricot"); </br>
-inserts an item at the beginning.</br></br>
-
-Remove from end: let lastItem = fruits.pop();</br>
-removes and returns the last element.</br></br>
-
-Remove from start: let firstItem = fruits.shift();</br> 
-removes and returns the first element.</br></br>
-
-Get length: fruits.length; </br>
-counts the total number of entries in your list.</br></br>
-
-Check contents: fruits.includes("banana"); </br>
-returns true or false based on item presence.</br></br>
-</p>
-
-
-<input type="text" id="useritem" placeholder="Enter an item to added to the list."/>
-
+    <input type="text" id="useritem" placeholder="Enter an item...">
+    <br>
     
-<button onclick="addtoendlist()">Add at END of list</button>&nbsp;&nbsp;
-<button onclick="addtofirstlist()">Add at FIRST of list</button>&nbsp;&nbsp;
-<button onclick="deletelastitem()">Delete LAST of list</button>&nbsp;&nbsp;
-<button onclick="deletefirstitem()">Delete First of list</button>&nbsp;&nbsp;
-<code-block>
-  <br> <br>// We will create a List with initial items:</br>
-  <br>let the_list =["Apple","Box","Car","Bannana","Orange","Circle"]</br> 7
+    <button onclick="addtoendlist()">Add at END of list</button>&nbsp;&nbsp;
+    <button onclick="addtofirstlist()">Add at FIRST of list</button>&nbsp;&nbsp;
+    <button onclick="deletelastitem()">Delete LAST of list</button>&nbsp;&nbsp;
+    <button onclick="deletefirstitem()">Delete First of list</button>&nbsp;&nbsp;
 
-</code-block>
+    <div id="screen-console">Initial values loading...</div>
 
-    <div id="screen-console"></div>
-
-<p></p>
     <footer id="footer-placeholder"></footer>
 
     <script>
-
-
+        // Footer component loader block
         function loadComponent(id, file) {
             fetch(file)
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById(id).innerHTML = data;
-                });
+                }).catch(err => console.log("Footer skipped or optional local mock setup."));
+        }
+        loadComponent('footer-placeholder', 'js_lesson_footer.html');
+
+        // 🌟 GLOBAL LIST AND ELEMENT VARIABLE MAPPINGS
+        let the_list = ["Apple", "Box", "Car", "Bannana", "Orange", "Circle"];
+        const userinputitem = document.getElementById('useritem');
+        const consoleBox = document.getElementById('screen-console');
+
+        // Core helper function to print state results out to visual screen
+        function printToScreen(text) {
+            consoleBox.innerText = text;
         }
 
-        // Call the function for both pieces
-        // loadComponent('header-placeholder', 'header.html');
-        loadComponent('footer-placeholder', 'js_lesson_footer.html');
-    
-      //const consoleBox = document.getElementById('screen-console');
-        
-     // const  userinputitem = document.getElementById('useritem');
+        // Show starting state right away as soon as page loads
+        printToScreen("Current List is: \n" + JSON.stringify(the_list));
 
-      // we create the list
-    let the_list =["Apple","Box","Car","Bannana","Orange","Circle"]
+        // 1. ADD ITEM TO BEGINNING (START)
+        function addtofirstlist() {
+            let valueToAdd = userinputitem.value.trim();
+            if (valueToAdd === "") {
+                alert("Please type an item first!");
+                return;
+            }
+            
+            the_list.unshift(valueToAdd); 
+            printToScreen("The New List is:\n" + JSON.stringify(the_list) + "\n\n📥 [" + valueToAdd + "] added as first item.");
+            userinputitem.value = ""; // Clear input field
+        } 
+        
+        // 2. ADD ITEM TO THE END
+        function addtoendlist() {
+            let valueToAdd = userinputitem.value.trim();
+            if (valueToAdd === "") {
+                alert("Please type an item first!");
+                return;
+            }
 
-      // first we will create the function to show the output to the screen.
-      
-     consoleBox.innerText =" Current List is: " + the_list ;
+            the_list.push(valueToAdd); 
+            printToScreen("The New List is:\n" + JSON.stringify(the_list) + "\n\n📥 [" + valueToAdd + "] added at the end.");
+            userinputitem.value = ""; // Clear input field
+        }
 
-   //<div id="screen-console">Waiting for your input...</div>   
-     function printToScreen(text) {
-            const consoleBox = document.getElementById('screen-console');
-                consoleBox.innerText += text + "\n";
-           }
-        
-    // Function to add the item  to the end of the list
-    function addtofirstlist(){
-                //item = 'coco';
-        const  userinputitem = document.getElementById('useritem');
-        the_list.unshift(userinputitem) ;
-        printToScreen(" The New List is: " + the_list + "\n the [" + userinputitem + "] added as first item.");em.";
-        
-        return 
-     } 
-     function deletelastitem() {
-         the_list.pop() ;
-         printToScreen("\n The last item been removed.\n The new List is: " +the_list) ;
-     }
-      
-    function addtoendlist(){
-        //const consoleBox = document.getElementById('screen-console');
-        //consoleBox.value =" \n - - - -  - - - - - - - - - \n The New list is  " + the_list ;
-        const  userinputitem = document.getElementById('useritem');
-        the_list.push(userinputitem) ;
-        printToScreen(" \n The New value added at the End isof the list is   " + userinputitem);
-        printToScreen("\n Now the items in the List are: " + the_list);
-      //  consoleBox.innerText =" \n The New value added at the End is  " + the_list ;
-        
-        return ; 
-    }
-    function deletefirstitem(){
+        // 3. DELETE LAST ITEM (POP)
+        function deletelastitem() {
+            if (the_list.length === 0) {
+                printToScreen("⚠️ The list is already completely empty!");
+                return;
+            }
+            let removedItem = the_list.pop();
+            printToScreen("The New List is:\n" + JSON.stringify(the_list) + "\n\n💥 Removed from end: [" + removedItem + "]");
+        }
 
-        printToScreen("coco") ;
-    }
-        
-      
-    
-  </script>
+        // 4. DELETE FIRST ITEM (SHIFT)
+        function deletefirstitem() {
+            if (the_list.length === 0) {
+                printToScreen("⚠️ The list is already completely empty!");
+                return;
+            }
+            let removedItem = the_list.shift();
+            printToScreen("The New List is:\n" + JSON.stringify(the_list) + "\n\n💥 Removed from start: [" + removedItem + "]");
+        }
+    </script>
 </body>
 </html>
