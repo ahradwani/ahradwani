@@ -91,7 +91,7 @@ returns true or false based on item presence.</br></br>
 
 </code-block>
 
-    <div id="screen-console">Waiting for your input...</div>
+    <div id="screen-console"></div>
 
 <p></p>
     <footer id="footer-placeholder"></footer>
@@ -120,15 +120,16 @@ returns true or false based on item presence.</br></br>
       // first we will create the function to show the output to the screen.
       
      consoleBox.innerText =" Current List is: " + the_list ;
-        
+
+   //<div id="screen-console">Waiting for your input...</div>   
      function printToScreen(text) {
             const consoleBox = document.getElementById('screen-console');
-            if consoleBox.innerText= "Enter an item to added to the list." {
-                consoleBox.innerText= "";     
-                 }
-            else {
+            //if consoleBox.innerText= "Enter an item to added to the list." {
+            //    consoleBox.innerText= "";     
+              //   }
+            //else {
                 consoleBox.innerText += text + "\n";
-            }
+            //}
         }
         
     // Function to add the item  to the end of the list
