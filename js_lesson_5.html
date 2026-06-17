@@ -87,7 +87,7 @@ returns true or false based on item presence.</br></br>
 <button onclick="deletefirstitem()">Delete First of list</button>&nbsp;&nbsp;
 <code-block>
   <br> <br>// We will create a List with initial items:</br>
-  <br>let the_list =["Apple","Box","Car","Bannana","Orange","Circle"]</br> 5
+  <br>let the_list =["Apple","Box","Car","Bannana","Orange","Circle"]</br> 6
 
 </code-block>
 
@@ -124,13 +124,8 @@ returns true or false based on item presence.</br></br>
    //<div id="screen-console">Waiting for your input...</div>   
      function printToScreen(text) {
             const consoleBox = document.getElementById('screen-console');
-            //if consoleBox.innerText= "Enter an item to added to the list." {
-            //    consoleBox.innerText= "";     
-              //   }
-            //else {
                 consoleBox.innerText += text + "\n";
-            //}
-        }
+           }
         
     // Function to add the item  to the end of the list
     function addtofirstlist(){
@@ -146,6 +141,7 @@ returns true or false based on item presence.</br></br>
      }
       
     function addtoendlist(){
+        //const consoleBox = document.getElementById('screen-console');
         //consoleBox.value =" \n - - - -  - - - - - - - - - \n The New list is  " + the_list ;
         the_list.push(userinputitem) ;
         printToScreen(" \n The New value added at the End isof the list is   " + userinputitem);
