@@ -24,6 +24,30 @@
 
 }
 
+.radio-group lable
+{
+display: flex;
+  align-item: center;
+  gap: 0.55rem;
+  font-size:0.9;
+  cursor: pointer;
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  color: white;
+  transition: var(--surface-2);
+  }
+
+input[type="radio"]
+{
+accent-color: var(--accent);
+  width: 15px;
+  height:15px;
+  flex-shrink:0;
+  cursor: pointer;
+}
+
+
+
 .radio-buttons
 {
 color:white;
