@@ -1,59 +1,107 @@
-<h2>Lesson 7, about functions in JS.</h2>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 7: JavaScript Functions</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background-color: #f4f7f6;
+        }
+        .container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h3 { color: #2980b9; margin-top: 30px; }
+        code {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+        .tip {
+            background: #e1f5fe;
+            border-left: 5px solid #03a9f4;
+            padding: 15px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+        ul { background: #f9f9f9; padding: 20px 40px; border-radius: 6px; }
+    </style>
+</head>
+<body>
 
+<div class="container">
+    <h2>Lesson 7: About functions in JS</h2>
 
-Conversation with Gemini
-Give me a post talking about Functions in js, that are they, why we use them, hwo to write a function, simple example, passing parameters, returning things. Post to be easy to understand, not long,
-Understanding JavaScript Functions: Your Code's Superpower
-Think of a function as a mini-recipe or a small machine within your code. You give it some ingredients (input), it does some work, and then it gives you a result (output).
+    <p><strong>Understanding JavaScript Functions: Your Code's Superpower</strong><br>
+    Think of a function as a mini-recipe or a small machine within your code. You give it some ingredients (input), it does some work, and then it gives you a result (output).</p>
 
-Why do we use them?
-Functions help you avoid repetition. Instead of writing the same lines of code over and over, you write them once inside a function and call it whenever you need it. This makes your code cleaner, easier to fix, and much faster to write.
+    <h3>Why do we use them?</h3>
+    <p>Functions help you avoid repetition. Instead of writing the same lines of code over and over, you write them once inside a function and call it whenever you need it. This makes your code cleaner, easier to fix, and much faster to write.</p>
 
-How to write a function
-The most common way to create one is by using the function keyword:
+    <h3>How to write a function</h3>
+    <p>The most common way to create one is by using the <code>function</code> keyword:</p>
+    <pre>
+function sayHello() {
+  console.log("Hello, world!");
+}
 
-</br></br>function sayHello() {</br>
-&nbsp;&nbsp;console.log("Hello, world!");</br>
-}</br>
-</br>
-// To use it (call it), just type its name:</br>
-sayHello();</br>
+// To use it (call it), just type its name:
+sayHello();</pre>
 
+    <h3>Passing Parameters (Input)</h3>
+    <p>Functions become really powerful when they can accept different data. You do this by putting parameters inside the parentheses <code>()</code>.</p>
+    <pre>
+function greetUser(name) {
+  console.log("Hello, " + name + "!");
+}
 
-Passing Parameters (Input)
-Functions become really powerful when they can accept different data. You do this by putting parameters inside the parentheses ().
+greetUser("Alice"); // Prints: Hello, Alice!
+greetUser("Bob");   // Prints: Hello, Bob!</pre>
 
-</br></br>&nbsp;&nbsp;function greetUser(name) {</br>
-&nbsp;&nbsp;console.log("Hello, " + name + "!");</br>
-}</br>
-</br>
-greetUser("Alice"); // Prints: Hello, Alice!</br>
-greetUser("Bob");   // Prints: Hello, Bob!</br>
+    <h3>Returning Things (Output)</h3>
+    <p>A function doesn't just have to "do" something; it can also <code>return</code> a value to you so you can use it later in your code.</p>
+    <pre>
+function addNumbers(a, b) {
+  return a + b;
+}
 
-Returning Things (Output)
-A function doesn't just have to "do" something; it can also return a value to you so you can use it later in your code. We use the return keyword for this.
+let sum = addNumbers(5, 10);
+console.log(sum); // Prints: 15</pre>
 
+    <div class="tip">
+        <strong>Pro Tip:</strong> Once a function hits the <code>return</code> statement, it stops running immediately. Anything written after the return inside that function will be ignored!
+    </div>
 
+    <h3>Summary Checklist</h3>
+    <ul>
+        <li><strong>Define:</strong> Use <code>function name() {}</code>.</li>
+        <li><strong>Reuse:</strong> Call it by typing <code>name()</code>.</li>
+        <li><strong>Customize:</strong> Use <strong>parameters</strong> to pass data in.</li>
+        <li><strong>Capture:</strong> Use <strong>return</strong> to get data back out.</li>
+    </ul>
 
-</br></br>&nbsp;&nbsp;function addNumbers(a, b) {</br>
-&nbsp;&nbsp;return a + b;</br>
-}</br>
-</br>
-let sum = addNumbers(5, 10);</br>
-console.log(sum); // Prints: 15</br>
+    <p>Functions are the building blocks of almost everything you'll build in JavaScript. Master these, and you're well on your way to becoming a great developer!</p>
+</div>
 
-Pro Tip: Once a function hits the return statement, it stops running immediately. Anything written after the return inside that function will be ignored!
-
-Summary Checklist
-Define: Use function name() {}.
-
-Reuse: Call it by typing name().
-
-Customize: Use parameters to pass data in.
-
-Capture: Use return to get data back out.
-
-Functions are the building blocks of almost everything you'll build in JavaScript. Master these, and you're well on your way to becoming a great developer!
-
-
+</body>
+</html>
