@@ -1,63 +1,68 @@
 
-<link rel="stylesheet" href="my_style.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Hub | Code Repository</title>
+    <link rel="stylesheet" href="my_style.css">
+</head>
 <body>
- <h2>Learning Hub</h2>
- <small>page under construction</small>
-</br>
-<h2>This is an  index for code lessons.</h2>
-<p>As i am learning and trying some codes, i will paste them here and try to make them easy.. </p>
 
-<h3>HTML</h3>
-<a href="HTML_Tags.html"> Here is a page with some HTML tags for your use.</a>
-<ul>
-<li> section  </li>
-<li></li>
-</ul>
+<header>
+    <h1>Learning Hub</h1>
+    <p class="subtitle">Personal code playground & lessons</p>
+</header>
 
-<h3>CSS</h3>
+<main>
+    <section class="intro">
+        <h2>Index of Lessons</h2>
+        <p>As I learn and experiment, I'm documenting my progress here. Each lesson is simplified to help me—and you—understand the core concepts better.</p>
+    </section>
 
-<h3>JS</h3>
- <small style="color: gray">[Some lessons will have it's code in the page, you may</br>
- need to chech the code.]</small> </br>
-<li> <a href="js_lesson_1.html">Lesson 1: Variables. </a>  </li>
-<li> <a href="js_lesson_2">Lesson 2: If / Else function.</a> </li>
-<li> <a href="js_lesson_3.html">Lesson 3: user input </a></li>
-<li> <a href="js_lesson_4.html">Lesson 4: For Loop  </a></li>
-<li> <a href="js_lesson_5.html">Lesson 5: List in JS.</a></li>
-<li> While Loop   </li>
-<li> <a href="js_lesson_7">Lesson 7: Function</a></li>
-<li><a href="js_radio_button.html">Lesson 8: Radio Buttons and CheckBox</a> </li>
- <li>Radio Buttons</li>
-<li>Project 1: </li>
-<li>Project 2: </li>
+    <section class="category">
+        <h3>Web Fundamentals</h3>
+        <ul>
+            <li><a href="HTML_Tags.html">HTML Tags Reference</a></li>
+            <li>CSS Styling (Coming Soon)</li>
+        </ul>
+    </section>
 
-</ul>  
-  
-<h3>Python</h3>
+    <section class="category">
+        <h3>JavaScript</h3>
+        <p class="note"><em>Note: Some lessons include interactive code examples.</em></p>
+        <div class="lesson-grid">
+            <a href="js_lesson_1.html">Lesson 1: Variables</a>
+            <a href="js_lesson_2.html">Lesson 2: If / Else</a>
+            <a href="js_lesson_3.html">Lesson 3: User Input</a>
+            <a href="js_lesson_4.html">Lesson 4: For Loop</a>
+            <a href="js_lesson_5.html">Lesson 5: Lists (Arrays)</a>
+            <a href="js_lesson_6.html">Lesson 6: While Loop</a>
+            <a href="js_lesson_7.html">Lesson 7: Functions</a>
+            <a href="js_radio_button.html">Lesson 8: Radio Buttons & Checkboxes</a>
+        </div>
+    </section>
 
-<code-block> this is mycode bloc style, </br> line 2. </br> line 3 
-
-</code-block>
-
-        
-
-<br><br> 
+    <section class="category">
+        <h3>Projects</h3>
+        <ul>
+            <li>Project 1: (In Progress)</li>
+            <li>Project 2: (In Progress)</li>
+        </ul>
+    </section>
+</main>
 
 <footer id="footer-placeholder"></footer>
 
+<script>
+    function loadComponent(id, file) {
+        fetch(file)
+            .then(response => response.text())
+            .then(data => { document.getElementById(id).innerHTML = data; })
+            .catch(err => console.log('Footer could not be loaded.'));
+    }
+    loadComponent('footer-placeholder', 'footer.html');
+</script>
+
 </body>
-  
-  <script>
-        function loadComponent(id, file) {
-            fetch(file)
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById(id).innerHTML = data;
-                });
-        }
-
-        // Call the function for both pieces
-       // loadComponent('header-placeholder', 'header.html');
-        loadComponent('footer-placeholder', 'footer.html');
-    </script>
-
+</html>
