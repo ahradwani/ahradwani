@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Understanding CSS</title>
+</head>
+<body>
+
+    <h1>Cascading Style Sheets (CSS)</h1>
+
+    <p><strong>CSS (Cascading Style Sheets)</strong> is the language used to style and layout web pages. While HTML provides the structure and content of a page, CSS provides the visual presentation—controlling colors, fonts, spacing, and responsive design.</p>
+
+    <h2>Why We Use CSS</h2>
+    <ul>
+        <li><strong>Separation of Concerns:</strong> Keeps content (HTML) separate from presentation (CSS), making code easier to maintain.</li>
+        <li><strong>Efficiency:</strong> You can apply the same style rules across multiple pages from a single file.</li>
+        <li><strong>Responsive Design:</strong> Allows websites to adapt gracefully to different screen sizes (mobile, tablet, desktop).</li>
+        <li><strong>Consistency:</strong> Ensures a uniform look and feel across your entire website.</li>
+    </ul>
+
+    <h2>Essential CSS Properties</h2>
+    <p>These are the fundamental properties every developer uses to build layouts:</p>
+    <ul>
+        <li><code>color</code>: Sets the text color.</li>
+        <li><code>background-color</code>: Sets the background color of an element.</li>
+        <li><code>font-family</code>: Defines the typography/font choice.</li>
+        <li><code>margin</code>: Creates space <em>outside</em> an element's border.</li>
+        <li><code>padding</code>: Creates space <em>inside</em> an element, between the content and the border.</li>
+        <li><code>display</code>: Controls how elements are rendered (e.g., <code>block</code>, <code>inline</code>, <code>flex</code>).</li>
+    </ul>
+
+    <h2>Advanced Properties for Better Layouts</h2>
+    <p>To move beyond basic styling, incorporate these powerful tools:</p>
+    <ul>
+        <li><strong>Flexbox (<code>display: flex</code>):</strong> Ideal for aligning items in a row or column and distributing space.</li>
+        <li><strong>CSS Grid (<code>display: grid</code>):</strong> Used for complex, two-dimensional layouts.</li>
+        <li><strong>Media Queries (<code>@media</code>):</strong> Allows you to apply specific styles based on the device's width.</li>
+        <li><strong>Transitions/Animations:</strong> Adds fluid movement and interaction to elements.</li>
+    </ul>
+
+    <h2>Linking CSS to HTML</h2>
+    <p>The best practice is to use an <strong>external stylesheet</strong>. Place a <code>&lt;link&gt;</code> tag inside the <code>&lt;head&gt;</code> section of your HTML document:</p>
+
+    <pre>
+&lt;head&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+    </pre>
+
+</body>
+</html>
