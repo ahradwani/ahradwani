@@ -1,0 +1,59 @@
+<h2>Lesson 7, about functions in JS.</h2>
+
+
+
+Conversation with Gemini
+Give me a post talking about Functions in js, that are they, why we use them, hwo to write a function, simple example, passing parameters, returning things. Post to be easy to understand, not long,
+Understanding JavaScript Functions: Your Code's Superpower
+Think of a function as a mini-recipe or a small machine within your code. You give it some ingredients (input), it does some work, and then it gives you a result (output).
+
+Why do we use them?
+Functions help you avoid repetition. Instead of writing the same lines of code over and over, you write them once inside a function and call it whenever you need it. This makes your code cleaner, easier to fix, and much faster to write.
+
+How to write a function
+The most common way to create one is by using the function keyword:
+
+</br></br>function sayHello() {</br>
+&nbsp;&nbsp;console.log("Hello, world!");</br>
+}</br>
+</br>
+// To use it (call it), just type its name:</br>
+sayHello();</br>
+
+
+Passing Parameters (Input)
+Functions become really powerful when they can accept different data. You do this by putting parameters inside the parentheses ().
+
+</br></br>&nbsp;&nbsp;function greetUser(name) {</br>
+&nbsp;&nbsp;console.log("Hello, " + name + "!");</br>
+}</br>
+</br>
+greetUser("Alice"); // Prints: Hello, Alice!</br>
+greetUser("Bob");   // Prints: Hello, Bob!</br>
+
+Returning Things (Output)
+A function doesn't just have to "do" something; it can also return a value to you so you can use it later in your code. We use the return keyword for this.
+
+
+
+</br></br>&nbsp;&nbsp;function addNumbers(a, b) {</br>
+&nbsp;&nbsp;return a + b;</br>
+}</br>
+</br>
+let sum = addNumbers(5, 10);</br>
+console.log(sum); // Prints: 15</br>
+
+Pro Tip: Once a function hits the return statement, it stops running immediately. Anything written after the return inside that function will be ignored!
+
+Summary Checklist
+Define: Use function name() {}.
+
+Reuse: Call it by typing name().
+
+Customize: Use parameters to pass data in.
+
+Capture: Use return to get data back out.
+
+Functions are the building blocks of almost everything you'll build in JavaScript. Master these, and you're well on your way to becoming a great developer!
+
+
