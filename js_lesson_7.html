@@ -102,6 +102,25 @@ console.log(sum); // Prints: 15</pre>
 
     <p>Functions are the building blocks of almost everything you'll build in JavaScript. Master these, and you're well on your way to becoming a great developer!</p>
 </div>
+</br></br>
+    <footer id="footer-placeholder"></footer>
 
+    <script>
+        // Footer component loader block
+        function loadComponent(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                }).catch(err => console.log("Footer skipped or optional local mock setup."));
+        }
+        loadComponent('footer-placeholder', 'js_lesson_footer.html');
+ </script>
+    
 </body>
 </html>
+
+
+
+
+
