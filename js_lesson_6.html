@@ -37,7 +37,7 @@
     </style>
     <link rel="stylesheet" href="my_style.css?v=1">
 </head>
-<body>
+<div class="body">
 
     <div class="lesson">
         <div class="h2">Lesson 6: The While Loop</div>
@@ -53,12 +53,6 @@
     In our code here, we are writing to the screen-console container after/ inside the while loop. 
 
 <div class="code">
-     while (fuelLevelPercentage > 0) 
-             {
-                consoleBox.innerText += "⛽ Current Tank: " + fuelLevelPercentage + "% - Status: Safe to continue.\n";    
-                fuelLevelPercentage = fuelLevelPercentage - 20; // reducing the value by 20
-            }
-
 &nbsp;&nbsp;while (fuelLevelPercentage &gt; 0) </br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;consoleBox.innerText += "⛽ Current Tank: " + fuelLevelPercentage + "% - Status: Safe to continue.\n";    </br>
@@ -112,5 +106,5 @@
             consoleBox.innerText += "\n🛑 Loop Stopped! Fuel level hit " + fuelLevelPercentage + "%. Alert: Refuel immediately!";
         }
     </script>
-</body>
+</div>
 </html>
