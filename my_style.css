@@ -11,6 +11,15 @@
             background-color: #f4f7f6;
         }
 
+
+.pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+
 .code-block 
 {
 background-color: #f0f0f0; /* Light gray */
