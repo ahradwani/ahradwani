@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Lesson 6: While Loops</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        button {
+            padding: 12px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 6px;
+            border: none;
+            background-color: #38bdf8;
+            color: white;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        #screen-console {
+            background-color: #1e293b;
+            color: #38bdf8;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: monospace;
+            min-height: 150px;
+            white-space: pre-line;
+            margin-top: 10px;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+    </style>
+    <link rel="stylesheet" href="my_style.css?v=1">
+</head>
+<body>
+
+    <div class="lesson">
+        <h1>JavaScript Lesson 6: The While Loop</h1>
+        <p>Simulating a real-world car fuel tracking sensor system.</p>
+    </div>
+
+    <button onclick="startDrivingSimulation()">🚀 Start Trip Simulation</button>
+
+    <div id="screen-console">Tap the button to start your journey...</div>
+
+    <script>
+        function startDrivingSimulation() {
+            const consoleBox = document.getElementById('screen-console');
+            consoleBox.innerText = "🚗 Engine started. Turning on smart fuel monitoring loop...\n\n";
+
+            // 1. Initialize our tracking point variable
+            let fuelLevelPercentage = 100; 
+
+            // 2. The loop condition: Run AS LONG AS fuel is strictly above 0
+            while (fuelLevelPercentage > 0) {
+                
+                consoleBox.innerText += "⛽ Current Tank: " + fuelLevelPercentage + "% - Status: Safe to continue.\n";
+                
+                // 3. CRITICAL ENGINE STEP: Decrement the value so the loop eventually ends!
+                // We simulate driving by dropping the fuel level by 20% each step
+                fuelLevelPercentage = fuelLevelPercentage - 20;
+            }
+
+            // 4. This line runs only AFTER the condition turns false and the loop breaks
+            consoleBox.innerText += "\n🛑 Loop Stopped! Fuel level hit " + fuelLevelPercentage + "%. Alert: Refuel immediately!";
+        }
+    </script>
+</body>
+</html>
