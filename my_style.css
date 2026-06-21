@@ -20,6 +20,21 @@
             overflow-x: auto;
         }
 
+.pycode {
+            background: #B8CAE0;
+            color: #2E80E6;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+.pycomment{
+            color: #7B7F85;
+            padding: 2px 6px;
+            font-family: 'Courier New', Courier, monospace;
+
+
+        }
+
 .code {
             background: #272822;
             color: #f8f8f2;
