@@ -1,9 +1,15 @@
 
-<html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Lesson</title>
+    <link rel="stylesheet" href="my_style.css">
+</head>
+
 <div class="body">
-
-
-
   
 <div class="h2">SQL Lesson Commands </div>
 <p>
@@ -12,10 +18,21 @@ In this lesson we will take some importans commands that we need. I assume you</
   to create and manage the DB and tables in that DB.</br>
 </p></br></br>
 
-<p>Column Types:</br>
+<p><strong>Column Types:</strong></br>
 In database we need to give each column a type name so th data can be stored in that </br>
 column int is integer, varchar is a string type float is a number wu=ith desimal point such as 8.3</br>
-here is a list of data-type we can use
+here is a list of data-type we can use:
+<p>
+Data Type;&nbsp;&nbsp;&nbsp in SQL;&nbsp;&nbsp;&nbsp	Example Value	;&nbsp;&nbsp;&nbspBest Used For
+Whole Numbers;&nbsp;&nbsp;&nbspINT ;&nbsp;&nbsp;&nbsp	42;&nbsp;&nbsp;&nbsp	Primary Keys, User Age, Counts
+Decimal Numbers;&nbsp;&nbsp;&nbsp	DECIMAL(10,2);&nbsp;&nbsp;&nbsp	19.99	;&nbsp;&nbsp;&nbsp Prices, Salaries, Account Balances
+Short Text;&nbsp;&nbsp;&nbsp VARCHAR(100);&nbsp;&nbsp;&nbsp	'John Doe';&nbsp;&nbsp;&nbsp	Names, Emails, Passwords, Titles
+Long Text;&nbsp;&nbsp;&nbsp	TEXT;&nbsp;&nbsp;&nbsp 'A long description..';&nbsp;&nbsp;&nbsp	Comments, Article Bodies
+Dates;&nbsp;&nbsp;&nbsp	DATE;&nbsp;&nbsp;&nbsp '2026-06-21';&nbsp;&nbsp;&nbsp	Birthdays, Project Deadlines
+Timestamps;&nbsp;&nbsp;&nbsp	TIMESTAMP;&nbsp;&nbsp;&nbsp	'2026-06-21 15:41:19';&nbsp;&nbsp;&nbsp	User log-in tracking, Created At
+True / False;&nbsp;&nbsp;&nbsp	BOOLEAN;&nbsp;&nbsp;&nbsp	TRUE;&nbsp;&nbsp;&nbsp	Active status, Checked boxes
+</p>
+  
 </p></br></br>
 
 <div class="title"> SQL Commands</div>
@@ -40,8 +57,8 @@ t-column-name column-type
 );
 
 
-alter table t-name
-add t-column-name column-type
+<div stylr="color:gray">//alter table t-name allow us to change a table after we creat it.</div>
+</br>add t-column-name column-type
 
 
 
