@@ -1,4 +1,8 @@
-"""
+
+<link rel="stylesheet" href="my_style.css">
+
+<div class="pycomment">
+    """
 
 To run Python code you need to copy | paste the code in your  python local editor, 
 or just use one of the python online interpreter. Here are some links for 
@@ -21,6 +25,7 @@ Created in: 21.6.2026
 Powered By:  AHRADWANI.fun | Learning Hub.
 
 """
+</div>
 
 # This line rows will be the diamond size. 
 rows = int(input("Enter number of rows: "))
@@ -40,6 +45,33 @@ for i in range(0, rows -1):
     for  j in range(0, rows  -i - 1 ): 
         print("* ", end="")
     print()
+
+
+-------------------------------------------------- </br>
+<div class="pycode">
+<div class="pycomment">&nbsp;&nbsp;# This line rows will be the diamond size.</div> </br>
+rows = int(input("Enter number of rows: "))</br>
+</br>
+<div class="pycomment"># This code will draw the upper part of the diamond. </div></br>
+for i in range(0, rows):</br>
+&nbsp;&nbsp;&nbsp;&nbsp;for j in range(0, rows - i -1):</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(" ",end="")</br>
+&nbsp;&nbsp;&nbsp;&nbsp;for j in range (0,i +1):</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("* ",end="")</br>
+&nbsp;&nbsp;&nbsp;&nbsp;print() </br>
+&nbsp;&nbsp;&nbsp;&nbsp;</br>
+<div class="pycomment"># This part  will draw the second hulf of the diamond. </div>   </br>
+for i in range(0, rows -1):</br>
+&nbsp;&nbsp;&nbsp;&nbsp;for j in range(0, i + 1 ):</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(" ", end="")</br>
+&nbsp;&nbsp;&nbsp;&nbsp;for  j in range(0, rows  -i - 1 ): </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("* ", end="")</br>
+&nbsp;&nbsp;&nbsp;&nbsp;print()</br>
+</br></div>
+</br>
+
+
+
 
 
 
