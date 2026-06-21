@@ -23,11 +23,7 @@ In database we need to give each column a type name so th data can be stored in 
 column int is integer, varchar is a string type float is a number wu=ith desimal point such as 8.3</br>
 here is a list of data-type we can use:
 <p>
-
-
-Dates;&nbsp;&nbsp;&nbsp	DATE;&nbsp;&nbsp;&nbsp '2026-06-21';&nbsp;&nbsp;&nbsp	Birthdays, Project Deadlines
-Timestamps;&nbsp;&nbsp;&nbsp	TIMESTAMP;&nbsp;&nbsp;&nbsp	'2026-06-21 15:41:19';&nbsp;&nbsp;&nbsp	User log-in tracking, Created At
-True / False;&nbsp;&nbsp;&nbsp	BOOLEAN;&nbsp;&nbsp;&nbsp	TRUE;&nbsp;&nbsp;&nbsp	Active status, Checked boxes
+	
 <table>
     <tr>
         <td>Data Type</td><td>In SQL</td><td>Example</td><td>Best Used for</td>
@@ -45,13 +41,13 @@ True / False;&nbsp;&nbsp;&nbsp	BOOLEAN;&nbsp;&nbsp;&nbsp	TRUE;&nbsp;&nbsp;&nbsp	
     <td>Long Text</td><td>text</td><td>A long description..</td><td>Comments, Article Bodies</td>
 </tr>    
 <tr>
-    <td>Dates</td><td>date</td><td></td><td></td>
+    <td>Dates</td><td>date</td><td>'2026-06-21'</td><td>Birthdays, Project Deadlines</td>
 </tr>    
 <tr>
-    <td></td><td></td><td></td><td></td>
+    <td>Timestamps</td><td>TIMESTAMP</td><td>'2026-06-21 15:41:19'</td><td>User log-in tracking, Created At</td>
 </tr>    
 <tr>
-    <td></td><td></td><td></td><td></td>
+    <td>True / False</td><td>boolean</td><td>True</td><td>Active status, Checked boxes</td>
 </tr>    
 <tr>
     <td></td><td></td><td></td><td></td>
@@ -83,11 +79,31 @@ t-column-name column-type
 
 );
 
-
-<div stylr="color:gray">//alter table t-name allow us to change a table after we creat it.</div>
+<div stylr="color:#85807F">//alter table t-name allow us to change a table after we creat it.</div>
 </br>add t-column-name column-type
 
+<div stylr="color:#85807F">//Each tabe MUST have an id column, this column is INT</br> 
+    and auto increment. Here is a full commannd to create a table in a database. 
+</br>create table employee-data (</br>
+ namid int not null auto_incrrment, //auto_incrrment the column will increment by 1 </br>
+name varchar(255) not null,  // so this column can't be empty. </br>
+    primary ky (id), // this </br>.
+    )
 
+    
+<div stylr="color:#85807F">//using not null after a column name mean</br> this column can't be empty.
+</br>create table employee-data (
+name varchar(255) not null  // so this column can't be empty.
+    )
+
+<div stylr="color:#85807F">//
+</br>
+
+    <div stylr="color:#85807F">//
+</br>
+
+    <div stylr="color:#85807F">//
+</br>
 
 
 
