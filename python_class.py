@@ -1,7 +1,25 @@
 """
-Python Class for fruit
+To run Python code you need to copy | paste the code in your  python local editor, 
+or just use one of the python online interpreter. Here are some links for 
+python online compyler.
 
-we will collect the fruit Name, hwo maney we have of it, and its price.            
+
+https://www.online-python.com/
+
+https://www.programiz.com/python-programming/online-compiler/
+
+https://www.onlinegdb.com/online_python_compilAb
+
+
+copy and run the code, change to see the efficts.
+
+About:
+   Python lesson about Class for fruit
+   we will collect the fruit Name, hwo maney we have of it, and its price.            
+
+
+Created in: 10.6.2026
+Powered By:  AHRADWANI.fun | Learning Hub.
 
 
 """
